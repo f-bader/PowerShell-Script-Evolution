@@ -1,11 +1,11 @@
 [CmdletBinding()]
 param (
-    # The $NetworkName will be set to every value that comes from the pipeline and is named NetworkName or Name
+    # The $NetworkName variable will be set to every value that comes from the pipeline and is named NetworkName or Name
     [Alias('Name')]
     [Parameter(Mandatory = $true,
         ValueFromPipelineByPropertyName = $true)]
     [String]$NetworkName,
-    # The $NetworkName will be set to every value that comes from the pipeline and is named ResourceGroupName
+    # The $ResourceGroupName variable will be set to every value that comes from the pipeline and is named ResourceGroupName
     [Parameter(Mandatory = $true,
         ValueFromPipelineByPropertyName = $true)]
     [String]$ResourceGroupName,
