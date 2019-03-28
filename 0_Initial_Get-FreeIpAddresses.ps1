@@ -1,7 +1,7 @@
 $NetworkName = "GlobalAzureBootcamp2019-vnet"
 $ResourceGroupName = "GlobalAzureBootcamp2019"
 
-
+#region Stuff from the Internetz
 function Get-SubnetAddress {
     [CmdletBinding()]
     param (
@@ -82,6 +82,7 @@ function Get-UInt32FromIPAddress {
 
     return [BitConverter]::ToUInt32($bytes, 0)
 }
+#endregion
 
 $SubnetConfiguration = Get-AzureRmVirtualNetwork -ExpandResource "subnets/ipConfigurations" -Name $NetworkName -ResourceGroupName $ResourceGroupName | Select-Object -ExpandProperty Subnets
 
