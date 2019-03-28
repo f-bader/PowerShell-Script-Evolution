@@ -4,7 +4,7 @@ param (
     [String]$SubnetName
 )
 
-# Usage: .\1_Initial_Get-FreeIpAddresses.ps1 -NetworkName GlobalAzureBootcamp2019-vnet -ResourceGroupName GlobalAzureBootcamp2019
+# Usage: .\1_Parameter_Get-FreeIpAddresses.ps1 -NetworkName GlobalAzureBootcamp2019-vnet -ResourceGroupName GlobalAzureBootcamp2019
 
 function Get-SubnetAddress {
     [CmdletBinding()]
